@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   todoArray=[];
   title = 'my-app';
@@ -15,8 +16,8 @@ export class AppComponent {
       for(let i=0 ;i<= this.todoArray.length ;i++){    
         if(todo== this.todoArray[i]){     
           this.todoArray.splice(i,1)    }   }  }
-  // submit Form  
-  todoSubmit(value:any){     if(value!==""){    this.todoArray.push(value.todo)     
-    this.todoForm.reset()    }else{      alert('Field required **')    }      }
+  // // submit Form  
+  // todoSubmit(value:any){     if(value!==""){    this.todoArray.push(value.todo)     
+  //   this.todoForm.reset()    }else{      alert('Field required **')    }      }
 };
 
